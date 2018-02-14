@@ -33,10 +33,10 @@ jobs:
       - run: go version
       - run: go get -v -t -d github.com/gorilla/mux
       #- run: go test -v ./...
-      - run: go build -v weatherservicegooglegeo/main.go
-      - run: mv main.exe weatherservicegooglegeo.exe
+      - run: go build -v apigooglegeo/main.go
+      - run: mv main.exe apigooglegeo.exe
       - run: ls -l
       # docker build, login and push.
-      - run: docker build -t "magnustiberius/weatherservicegooglegeo" .
+      - run: docker build -t "magnustiberius/apigooglegeo" .
       - run: docker login -u=$DOCKER_USER -p=$DOCKER_PASS
-      - run: docker push  magnustiberius/weatherservicegooglegeo
+      - run: docker push  magnustiberius/apigooglegeo
