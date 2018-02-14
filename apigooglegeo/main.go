@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/MagnusTiberius/weatherservice/handler"
+	"github.com/MagnusTiberius/weatherservicegooglegeo/handler"
 	"github.com/gorilla/mux"
 )
 
