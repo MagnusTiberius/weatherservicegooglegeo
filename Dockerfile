@@ -1,7 +1,7 @@
 FROM golang
 
-ADD ./weatherservicegooglegeo.exe /usr/local/bin/
+ADD ./apigooglegeo.exe /usr/local/bin/
 
-ENTRYPOINT /usr/local/bin/weatherservicegooglegeo.exe
+ENTRYPOINT /usr/local/bin/apigooglegeo.exe
 
 EXPOSE 8090
